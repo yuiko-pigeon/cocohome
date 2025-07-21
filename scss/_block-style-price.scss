@@ -1,0 +1,25 @@
+@use "./global/index" as g;
+
+/* 料金表 */
+tr:nth-child(odd){
+	background-color: g.$color-tableOrange !important;
+}
+
+tr:nth-child(even){
+	background-color: g.$color-tableGreen !important;
+}
+
+//editor_custom_block
+$block: 'is-style';	
+
+.#{$block}-price-group {
+    margin: 0 auto;
+    h2{
+        border-bottom: solid 1px g.$color-keyGreen;
+
+    }
+    .wp-block-table tr{
+        font-size: clamp(1rem, 3vw, 1.5rem);
+    }
+}
+

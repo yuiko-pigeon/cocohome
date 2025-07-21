@@ -1,0 +1,21 @@
+
+.vk-mobile-nav {
+    text-align: center;
+    transition: all 1.5s ease-out !important;
+    height: auto !important;
+}
+
+#menu-header-nav-2{
+    font-weight: bold;    
+    li{
+        line-height: 2.65 !important;
+        >a:hover{
+            background: #e9f8ee;
+        }
+    }
+}
+
+.vk-mobile-nav-widget>h2:where(:not(.wp-block-post-title)){
+    border-bottom: 2px solid var(--vk-color-primary) !important;
+}
+

@@ -1,0 +1,41 @@
+@use "./global/index" as g;
+
+.vk-visual-embed.alignright iframe {
+    margin: 0 auto !important;
+    @include g.tab {
+        margin-left: 0 0 0 auto;
+    }
+}
+.vk-visual-embed-preview {
+    @include g.tab {
+        padding-left: clamp(0.3125rem, 7%, 5rem) !important;
+    }
+}
+
+//editor_custom_block
+$block: 'is-style';	
+
+.#{$block}-colums-company{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    @include g.tab {
+        flex-direction: row !important;
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+.#{$block}-colum-company{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include g.tab {
+        padding-right: clamp(2.1875rem, 7%, 5rem) !important;
+        margin-left: 1rem !important;
+        margin-top: 5rem !important;
+    }
+    >p{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}

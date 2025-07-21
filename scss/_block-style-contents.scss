@@ -1,0 +1,72 @@
+@use "./global/index" as g;
+
+
+.vk_flow_frame{
+	border: 3px solid g.$color-orange !important;
+}
+
+.has-vk-color-primary-border-color{
+	width: 100% !important;
+	text-align: center !important;
+}
+
+
+.has-vk-color-primary-border-color{
+	@include g.pc {
+		text-align: left !important;
+	}
+}
+
+//editor_custom_block
+$block: 'is-style';	
+
+.#{$block}-list-step{
+	list-style: none;
+  	counter-reset: number;
+	list-style-type: none !important;
+}
+
+.#{$block}-list-step li{
+	position: relative;
+    padding: 0 1.25rem 1.5rem 2.5rem; 
+	&::before{
+		counter-increment: number;
+		content: 'STEP' counter(number);
+		position: absolute;
+		left: -1rem;
+	}
+	&::after{
+		content: '';
+		height: 29px;
+		top: 47%;
+		width: 2px;
+		position: absolute;
+		left: 4px;
+		background: g.$color-lightGreen;
+	}
+	&:last-child::after {
+		visibility: hidden !important;
+	}
+}
+
+.#{$block}-background-orange{
+	width: 100%;
+    background: g.$color-lightOrange;
+    padding-top: 2.5rem;
+    padding-left: clamp(1rem, 5.8vw, 5rem);
+    padding-bottom: 2.5rem;
+    border-radius: 3rem;
+	box-shadow: 0 0 0 1rem g.$color-lightOrange;
+    border: dashed 2px g.$color-orange;
+    margin-left: 0 !important;
+	@include g.pc {
+			width: 85%;
+	}
+}
+
+.#{$block}-background-orange>p{
+	padding-right: 1.5rem;
+	@include g.tab {
+		padding-right: 4rem !important;
+	}
+}

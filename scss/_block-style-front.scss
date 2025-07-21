@@ -1,0 +1,112 @@
+@use "./global/index" as g;
+
+/*ヒーロー画像内会社名*/
+.hero-tel{
+	color: g.$color-white;
+	font-size: 1.82vw !important;
+	position: absolute;
+	&:hover{
+		color: var(--vk-color-primary);
+		text-decoration: none !important;
+	}
+}
+
+.mini-content-container-1 .btn {
+	display:none !important;
+}
+
+.ltg-slide-text-set{
+	top: 75% !important;
+    left: 2% !important;
+	width: 100%;
+	transform: unset !important;
+	@media screen and (min-width: 782px) {
+		top: 77% !important;
+	}
+}
+
+.mini-content-container-1{
+	width: 100% !important;
+	margin: 0 !important;
+	padding-left: 2%;
+}
+
+.mini-content-container-1{
+    span{
+		font-size: 1.82vw;
+		font-weight: 700;
+    }
+    >a{
+        width: auto;
+        font-size: 1vw;
+    }
+}
+
+.ltg-slide-text-title{
+    color: g.$color-white;
+    padding-left: 0.42%;
+    font-size: 1.52vw;
+}
+
+.ltg-slide-text-caption{
+	margin-top: 2px !important;
+	margin-bottom: 3px !important;
+	text-align: left;
+	font-size: 1.52vw !important;
+    color: g.$color-white;
+}
+
+.mini-content-container-1>.btn-ghost{
+	width: auto;
+    padding: 0 5px !important;
+    position: absolute;
+	font-size: 1.5vw !important;
+}
+
+
+//editor_custom_block
+$block: 'is-style';	
+
+h4.#{$block}-title-round{
+	position: relative;
+    outline: unset;
+    outline-offset: unset;
+    box-shadow: unset;
+    overflow: unset;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+    border: solid g.$color-keyGreen;
+    margin-bottom: 1.2em;
+    border-radius: 54px;
+	padding-top: var(--wp--preset--spacing--30);
+    padding-bottom: var(--wp--preset--spacing--30);
+    width: max-content !important;
+	margin-left: 0 !important;
+}
+
+.#{$block}-colums-center{
+	width: 100%;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+.#{$block}-colum-center{
+	display: flex;
+	justify-content: center;
+}
+
+
+.#{$block}-sptb-row{
+	@media screen and (min-width: 992px) {
+		flex-direction: row !important;
+	}
+}
+
+.#{$block}-sptb-row-reverse{
+	flex-direction: column-reverse !important;
+	@media screen and (min-width: 992px) {
+		flex-direction: row !important;
+	}
+}
+.js-fix, html.js-fix {
+	overflow: hidden !important;
+  }

@@ -1,0 +1,8 @@
+
+@use "./global/index" as g;
+
+:root {
+    --vk-color-primary: g.$color-keyGreen !important;
+  }
+
+  

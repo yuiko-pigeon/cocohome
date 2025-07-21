@@ -1,0 +1,21 @@
+@use "root";
+@use "layout";
+@use "header";
+@use "text";
+@use "navmenu";
+@use "footer";
+@use "acordion";
+//フロントページ
+@use "block-style-front";
+//弊社について
+@use "block-style-company";
+// 事業内容
+@use "block-style-contents";
+// 料金表 
+@use "block-style-price";
+// お問い合わせ
+@use "block-style-contact";
+//404
+@use "page-404";
+
+

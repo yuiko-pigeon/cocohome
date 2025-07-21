@@ -1,0 +1,64 @@
+@use "./global/index" as g;
+
+.site-header-container{
+	position: sticky;
+	align-items: center;
+}
+
+.header_scrolled .header-top, .header_scrolled .site-header-logo, .header_scrolled .site-header-sub, .header_scrolled .vk-campaign-text{
+	display: block !important;
+}
+
+
+/*固定ページheader*/
+.page-header{
+	color: g.$color-black !important;
+	background-color: g.$color-white !important;
+	width: 20rem;
+	//width: clamp(13rem, 23vw, 20rem);
+	margin: 0 auto 2rem auto;
+	text-align: center;
+	align-items: end !important;
+	font-size: 0.5rem;
+	border-bottom: solid 5px g.$color-mintGreen !important;
+	min-height: 6rem !important;
+	@include g.pc {
+			width: 100%;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			color: g.$color-black !important;
+			margin-left: 0;
+			margin-right: 0%;
+			font-size: 1rem;
+			min-height: auto !important;
+			//border-bottom: solid 5px #33b795 !important;
+			border-bottom: none !important;
+			padding: 0;
+	}
+}
+
+.page-header-inner{
+	width: 85%;
+	padding: 0;
+	margin: 1rem auto !important;
+	@include g.pc {
+		width: 100%;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+}
+
+h1.page-header-title{
+	font-size: clamp(1.8rem, 2.3vw, 2rem);
+	@include g.pc {
+		text-align: center !important;
+		padding: 1.5rem 0 1rem 0rem;
+		border-bottom: 5px solid g.$color-bottomGreen !important;
+		width: 32%;
+	}
+}
+
+.breadcrumb-list {
+	padding: 6px 1rem !important;
+}

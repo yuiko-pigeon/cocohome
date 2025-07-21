@@ -1,0 +1,18 @@
+@use "./global/index" as g;
+
+.has-text-align-left{
+	@media screen and (min-width: 992px) {
+		text-align: center !important;
+	}
+}
+
+.wp-block-preformatted{
+	text-align: center !important;
+}
+
+.br-sp{
+	display: block;
+	@include g.tab {
+		display: none;
+	}
+}

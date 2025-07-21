@@ -1,0 +1,133 @@
+@use "./global/index" as g;
+
+
+.entry{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.br-tb{
+	display: none;
+	@include g.tab {
+		display: block;
+	}
+}
+
+.smf-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin: 1.5rem auto 3rem;
+    font-size: 1rem;
+    color: g.$color-black;
+    line-height: 2.78rem;
+    @include g.tab {
+        font-size: 1.2rem;
+    }
+}
+
+.smf-item__label{
+    &__text{
+        position: relative;
+        &::after{
+            content: '必須';
+            color: g.$color-red;
+            position: absolute;
+            top: 50%;
+            right: -66%;
+            transform: translateY(-50%);
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.wp-block-snow-monkey-forms-item:nth-child(5) .smf-item__label__text::after{
+    display: none;
+}
+
+.wp-block-snow-monkey-forms-item:nth-child(6) .smf-item__label__text::after{
+    display: none;
+}
+
+.wp-block-snow-monkey-forms-item:nth-child(7) .smf-item__label__text::after{
+    display: none;
+}
+
+.wp-block-snow-monkey-forms-item:nth-child(8) .smf-item__label__text::after{
+    top: 50%;
+    right: -17%;
+    transform: translateY(-50%);
+}
+
+.smf-text-control__control{
+    width: 100%;
+    height: 2.03rem;
+}
+
+.smf-checkboxes-control__control{
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.smf-checkbox-control{
+    align-items: center !important;
+    &__control {
+        margin-top: 0 !important;
+    }
+}
+
+.smf-checkbox-control__label{
+    font-size: 1.2rem !important;
+}
+
+.smf-button-control{
+    margin: 0 auto  !important;
+}
+
+.smf-button-control__control
+{
+    display: flex !important;
+    justify-content: center;
+    margin: 2.5rem auto 5rem auto;
+    padding: 0.5rem 0.85rem 0.5rem 1rem;
+    background-color: g.$color-keyGreen !important;
+    background-image: none !important;
+    color: g.$color-white !important;
+    font-size: 1rem;
+    border: none !important;
+    border-radius: 46px !important;
+    width: 9rem !important;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: g.$color-skGreen !important;
+      color: g.$color-black !important;
+      background-image: none;
+    }
+}
+
+.smf-item__description>a{
+    cursor: pointer;
+    &:link{
+        color: g.$color-blue;
+        text-decoration: none;
+        text-decoration: underline;
+    }
+    &:visited{
+        color: g.$color-blue;
+        text-decoration: none;
+    }
+    &:hover{
+        color: g.$color-blue;
+        text-decoration: underline;
+        text-decoration-color: g.$color-black;
+    }
+    &:focus{
+        color: g.$color-blue;
+        text-decoration: none;
+    }
+    &:active{
+        color: g.$color-blue;
+        text-decoration: none;
+    } 
+}

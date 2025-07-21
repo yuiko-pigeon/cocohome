@@ -1,0 +1,17 @@
+@use "./global/index" as g;
+
+.site-footer-content .row{
+    width: 85% !important;
+    margin: 0 auto !important;
+}
+
+.site-footer-copyright p:nth-child(2){
+    display: none !important;
+}
+
+.widget_nav_menu .site-footer-title{
+    margin-top: 3rem !important;
+    @include g.tab {
+        margin-top: 0 !important;
+    }
+}

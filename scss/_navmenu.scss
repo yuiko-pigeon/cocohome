@@ -1,0 +1,37 @@
+@use "./global/index" as g;
+
+.global-nav-list>li[class*=current]:where(:not(.menu-item-anchor #menu-item-102)):before{
+	width: 100% !important;
+}
+
+.global-nav .nav li a {
+	color: g.$color-black;
+	}
+
+.global-nav-list > li::before {
+	border-bottom: 4px solid g.$color-bottomGreen !important;
+	}
+ 
+#global-nav #menu-item-102{
+	width: auto;
+    height: 100%;
+    background: g.$color-keyGreen;
+    border-radius: 46px;
+	.global-nav-name{
+		color: g.$color-white;
+		width: auto;
+        height: 100%;
+	}
+	&::before{
+		border-bottom: none !important;
+	}
+	&:hover{
+		text-decoration: none ;
+		background: g.$color-lightMintGreen;
+		border-radius: 46px;
+		.global-nav-name{
+			color: g.$color-black !important;
+		}
+	}
+	
+}
