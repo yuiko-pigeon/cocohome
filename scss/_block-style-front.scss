@@ -63,7 +63,6 @@
 	font-size: 1.5vw !important;
 }
 
-
 //editor_custom_block
 $block: 'is-style';	
 
@@ -89,6 +88,7 @@ h4.#{$block}-title-round{
 	margin-left: 0 !important;
 	margin-right: 0 !important;
 }
+
 .#{$block}-colum-center{
 	display: flex;
 	justify-content: center;

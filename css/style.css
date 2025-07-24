@@ -24,6 +24,18 @@
   display: block !important;
 }
 
+@media (max-width: 991px) {
+  .lightning_swiper {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .page-header {
+    margin-top: 0 !important;
+  }
+}
+
 /*固定ページheader*/
 .page-header {
   color: #3E3E3E !important;
@@ -36,7 +48,7 @@
   border-bottom: solid 5px #33b795 !important;
   min-height: 6rem !important;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .page-header {
     width: 100%;
     text-align: center;
@@ -57,7 +69,7 @@
   padding: 0;
   margin: 1rem auto !important;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .page-header-inner {
     width: 100%;
     margin: 0 !important;
@@ -68,7 +80,7 @@
 h1.page-header-title {
   font-size: clamp(1.8rem, 2.3vw, 2rem);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   h1.page-header-title {
     text-align: center !important;
     padding: 1.5rem 0 1rem 0rem;
@@ -339,7 +351,7 @@ h4.is-style-title-round {
   text-align: center !important;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .has-vk-color-primary-border-color {
     text-align: left !important;
   }
@@ -385,7 +397,7 @@ h4.is-style-title-round {
   border: dashed 2px #ffb03f;
   margin-left: 0 !important;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .is-style-background-orange {
     width: 85%;
   }
@@ -420,7 +432,7 @@ tr:nth-child(even) {
 }
 
 .entry {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -434,6 +446,7 @@ tr:nth-child(even) {
 }
 
 .smf-form {
+  width: 85% !important;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
@@ -569,7 +582,7 @@ tr:nth-child(even) {
 .error404 .lineheight__large {
   line-height: 2.5rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .error404 .lineheight__large {
     line-height: 3rem;
   }

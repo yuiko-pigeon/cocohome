@@ -9,6 +9,17 @@
 	display: block !important;
 }
 
+//スクロール時に上部に出てくる余白を削除す流。lightningのJSで上部余白が書かれているので、ここだけmax-widthで対応。
+.lightning_swiper{
+	@media (max-width: 991px) {
+  		margin-top: 0 !important;
+	}
+}
+.page-header{
+	@media (max-width: 991px) {
+  		margin-top: 0 !important;
+	}
+}
 
 /*固定ページheader*/
 .page-header{
