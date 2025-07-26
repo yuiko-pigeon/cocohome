@@ -3,8 +3,11 @@
 /*ヒーロー画像内会社名*/
 .hero-tel{
 	color: g.$color-white;
-	font-size: 1.82vw !important;
+	font-size: 2.52vw !important;
 	position: absolute;
+	@include g.tab {
+		font-size: 1.82vw !important;
+	}
 	&:hover{
 		color: var(--vk-color-primary);
 		text-decoration: none !important;
@@ -16,13 +19,15 @@
 }
 
 .ltg-slide-text-set{
-	top: 75% !important;
-    left: 2% !important;
+	top: 82% !important;
+	left: 2.7% !important;
 	width: 100%;
 	transform: unset !important;
-	@media screen and (min-width: 782px) {
+	@include g.tab {
 		top: 77% !important;
+		left: 2% !important;
 	}
+
 }
 
 .mini-content-container-1{
@@ -33,8 +38,11 @@
 
 .mini-content-container-1{
     span{
-		font-size: 1.82vw;
+		font-size: 3vw !important;
 		font-weight: 700;
+		@include g.tab {
+			font-size: 1.82vw !important;
+		}
     }
     >a{
         width: auto;

@@ -8,6 +8,9 @@ add_action( 'wp_head', function() {
 		echo '<meta name="description" content="' . esc_attr( get_bloginfo( 'description' ) ) . '">' . "\n";
 	}
 });
+// Font Awesome の読み込みを無効化
+add_filter( 'lightning_font_awesome_disable', '__return_true' );
+add_filter( 'vk_blocks_font_awesome_load', '__return_false' );
 //deferにて遅延読み込み
 add_filter( 'script_loader_tag', function( $tag, $handle, $src ) {
 	// defer を付けたいスクリプトのハンドル名一覧
@@ -290,15 +293,14 @@ function add_menu_headerLink_class($atts, $item, $args, $depth) {
 }
 add_filter('nav_menu_link_attributes', 'add_menu_headerLink_class', 10, 4);
 
-/*-------------------------------------------*/
-/*  フッターのウィジェットエリアの数を増やす
-/*  ※ Lightning Pro や G3 Pro Unit の Lカスタマイズ > ightning フッター設定 から指定できるカラム数を上書きするので注意してください。
-/*-------------------------------------------*/
+//フッターのウィジェットエリアの数を増やす
+// Lightning Pro や G3 Pro Unit の Lカスタマイズ > ightning フッター設定 から指定できるカラム数を上書きするので注意
 add_filter('lightning_footer_widget_area_count','lightning_footer_widget_area_count_custom',11);
 function lightning_footer_widget_area_count_custom($footer_widget_area_count){
     $footer_widget_area_count = 2; // ← 1~4の半角数字で設定してください。
     return $footer_widget_area_count;
 }
+
 
 //独自スタイルの追加
 function custom_block_styles() {
@@ -399,7 +401,7 @@ add_action(
 			$home_url = esc_url( home_url( '/' ) );
 			// カスタマイズした404ページの内容を表示する
 			echo '<div class="page404__title--area">
-                            <h1 class="hero__title--menu">not found</h1>
+                            <h1 class="hero__title--menu">404</h1>
                             <span>ページが見つかりません</span>
                         </div>
                         <article class="page404__text--area lineheight page404__margin--bottom">
