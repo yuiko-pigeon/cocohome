@@ -169,6 +169,8 @@ h1.page-header-title {
   text-align: center;
   transition: all 1.5s ease-out !important;
   height: auto !important;
+  max-height: 100vh !important;
+  overflow-y: auto !important;
 }
 
 #menu-header-nav-2 {
@@ -190,14 +192,15 @@ h1.page-header-title {
   color: #FFFFFF;
   font-size: 2.52vw !important;
   position: absolute;
+  width: auto;
 }
-@media screen and (min-width: 782px) {
+@media screen and (min-width: 768px) {
   .hero-tel {
     font-size: 1.82vw !important;
   }
 }
 .hero-tel:hover {
-  color: var(--vk-color-primary);
+  color: #209455 !important;
   text-decoration: none !important;
 }
 
@@ -211,7 +214,7 @@ h1.page-header-title {
   width: 100%;
   transform: unset !important;
 }
-@media screen and (min-width: 782px) {
+@media screen and (min-width: 768px) {
   .ltg-slide-text-set {
     top: 77% !important;
     left: 2% !important;
@@ -228,14 +231,10 @@ h1.page-header-title {
   font-size: 3vw !important;
   font-weight: 700;
 }
-@media screen and (min-width: 782px) {
+@media screen and (min-width: 768px) {
   .mini-content-container-1 span {
     font-size: 1.82vw !important;
   }
-}
-.mini-content-container-1 > a {
-  width: auto;
-  font-size: 1vw;
 }
 
 .ltg-slide-text-title {
@@ -498,6 +497,10 @@ tr:nth-child(even) {
 }
 
 .wp-block-snow-monkey-forms-item:nth-child(8) .smf-item__label__text::after {
+  display: none;
+}
+
+.wp-block-snow-monkey-forms-item:nth-child(9) .smf-item__label__text::after {
   top: 50%;
   right: -17%;
   transform: translateY(-50%);
@@ -550,7 +553,7 @@ tr:nth-child(even) {
 }
 
 .smf-item__description > a {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 .smf-item__description > a:link {
   color: #2d5b8d;

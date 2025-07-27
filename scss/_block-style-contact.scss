@@ -55,6 +55,10 @@
 }
 
 .wp-block-snow-monkey-forms-item:nth-child(8) .smf-item__label__text::after{
+    display: none;
+}
+
+.wp-block-snow-monkey-forms-item:nth-child(9) .smf-item__label__text::after{
     top: 50%;
     right: -17%;
     transform: translateY(-50%);
@@ -108,7 +112,7 @@
 }
 
 .smf-item__description>a{
-    cursor: pointer;
+    cursor: pointer !important;
     &:link{
         color: g.$color-blue;
         text-decoration: none;

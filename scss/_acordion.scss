@@ -3,6 +3,8 @@
     text-align: center;
     transition: all 1.5s ease-out !important;
     height: auto !important;
+    max-height: 100vh !important;
+    overflow-y: auto !important;
 }
 
 #menu-header-nav-2{

@@ -5,11 +5,12 @@
 	color: g.$color-white;
 	font-size: 2.52vw !important;
 	position: absolute;
-	@include g.tab {
+	width:auto;
+	@media screen and (min-width: 768px) {
 		font-size: 1.82vw !important;
 	}
 	&:hover{
-		color: var(--vk-color-primary);
+		color: g.$color-keyGreen !important;
 		text-decoration: none !important;
 	}
 }
@@ -23,11 +24,10 @@
 	left: 2.7% !important;
 	width: 100%;
 	transform: unset !important;
-	@include g.tab {
+	@media screen and (min-width: 768px) {
 		top: 77% !important;
 		left: 2% !important;
 	}
-
 }
 
 .mini-content-container-1{
@@ -40,13 +40,9 @@
     span{
 		font-size: 3vw !important;
 		font-weight: 700;
-		@include g.tab {
+		@media screen and (min-width: 768px) {
 			font-size: 1.82vw !important;
 		}
-    }
-    >a{
-        width: auto;
-        font-size: 1vw;
     }
 }
 
